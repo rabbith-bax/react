@@ -7,7 +7,10 @@ class CHeader extends Component {
     return (
       <div className="headerContainer">
         <img src={logo} className="headerLogo" alt="logo" />
-        <h2>Witaj w przykladowym serwisie</h2>
+        <h2>
+          Witaj w przykladowym serwisie{" "}
+          {this.props.aName + " " + this.props.aFamily}.
+        </h2>
       </div>
     );
   }
